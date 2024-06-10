@@ -121,7 +121,3 @@ Here are some of the main API endpoints provided by the Django backend:
 ![obraz](https://github.com/Tobajos/ToDoList/assets/92229397/14d9bcd8-e9b1-4875-8e5b-05889bf319dd)
 
 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
