@@ -1,7 +1,22 @@
-<p>home works!</p>
+<div class="page">
+    <div *ngIf="!user">
+            <p style="font-size:20px;">To create your first list, you need to be logged in.</p> 
+    </div>
+    <div *ngIf="user"class="container">
+            <form (ngSubmit)="onSubmit()" #listForm="ngForm">
+                <div class="form">
+                    <input type="text" id="title" name="title" [(ngModel)]="newList.title" placeholder="Create new list" class="input">
+                    <button type="submit" [disabled]="listForm.invalid" class="button">create</button>
+                </div>
+            </form>
+        
+        <div class="cards">
+            <div *ngFor="let l of list" class="listContainer">
+                <div  [routerLink]="['/list', l.id]" class="list">
+                        <div class="textContainer">{{l.title}}</div>
+                </div>
+            </div>
+        </div>
 
-<div *ngFor="let l of list">
-    {{l.title}}
 </div>
-    
-    
+</div>

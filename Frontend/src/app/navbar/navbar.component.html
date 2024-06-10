@@ -1,0 +1,9 @@
+<div class="container">
+    <ng-container *ngIf="user; else loginButton">
+        <p style="color:white;padding-right: 40px;">Hello {{user.username}}</p>
+        <button (click)="Logout()" class="button">Logout</button>
+    </ng-container>
+    <ng-template #loginButton>
+        <button [routerLink]="'/login'" class="button">Login</button>
+    </ng-template>
+</div>

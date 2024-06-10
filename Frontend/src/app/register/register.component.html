@@ -1,0 +1,14 @@
+<div class="page">
+    <div class="container">
+        <div style="width: 100%; display: flex;justify-content: center;">
+            <h2 style="font-size: 20px;color:white;">Register</h2>
+        </div>
+        <form (ngSubmit)="register()" #registerForm="ngForm" class="form">
+            <label class="label" for="username">Username:</label>
+            <input class="input" type="text" id="username" [(ngModel)]="username" name="username" required>
+            <label class="label" for="password">Password:</label>
+            <input class="input" type="password" id="password" [(ngModel)]="password" name="password" required>
+            <button class="button" type="submit" [disabled]="registerForm.invalid">Register</button>
+        </form>
+    </div>
+</div>

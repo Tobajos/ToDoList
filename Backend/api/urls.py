@@ -11,4 +11,7 @@ urlpatterns = [
     path('addItem', views.addItem),
     path('getList/<int:id>', views.getListWithItems),
     path('test',views.getAllLists),
+    path('items/<int:item_id>', views.updateItemStatus),
+    path('deleteList/<int:list_id>', views.deleteList),
+    path('deleteItem/<int:item_id>', views.deleteItem),
 ]

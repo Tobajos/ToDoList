@@ -8,5 +8,5 @@ class List(models.Model):
 
 class Item(models.Model):
     list = models.ForeignKey(List, on_delete=models.CASCADE)
-    content = models.TextField(max_length=30, blank=False, null=False)
+    content = models.TextField(max_length=50, blank=False, null=False)
     status = models.BooleanField(default=False)

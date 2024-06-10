@@ -1,0 +1,113 @@
+.backIcon{
+    font-size: 25px;
+    padding-left:20px;
+}
+.backIcon:hover{
+    color:white;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.container {
+    width: 30%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0.6, 0.6, 0.6, 0.6);
+    min-width: 350px;
+}
+
+.title{
+    width:center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.doneDiv{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(27, 27, 27);
+    padding: 4%;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 15px;
+    border:none;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0.6, 0.6, 0.6, 0.6);
+}
+
+.button{
+    font-size: 15px;
+    padding:8px;
+    border-radius: 15px;
+    border:none;
+    background-color: rgb(36, 36, 36);
+    color:white;
+    border:solid 3px rgb(36, 36, 36);
+}
+.button:hover{
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    border:solid 3px white;
+}
+
+.item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content{
+    color:white;
+    font-size:20px;
+}
+
+.done{
+    font-size: 15px;
+    padding:8px;
+    border-radius: 15px;
+    border:none;
+    background-color: rgb(83, 177, 168);
+    color: rgb(27, 27, 27);
+    border:solid 3px rgb(83, 177, 168);
+}
+.done:hover{
+    cursor: pointer;
+    border:solid 3px white;
+}
+.textDone{
+    color:rgb(83, 177, 168);
+    padding:8px;
+    font-size: 20px;
+}

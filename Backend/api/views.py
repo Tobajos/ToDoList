@@ -128,4 +128,18 @@ def getAllLists(request):
         return Response(serializer.data)
     except Exception as e:
         return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def updateItemStatus(request, item_id):
+    try:
+        item = get_object_or_404(Item, id=item_id, list__user=request.user)
+        item.status = request.data.get('status', item.status)
+        item.save()
+        serializer = ItemSerializer(item)
+        return Response(serializer.data)
+    except Item.DoesNotExist:
+        return Response({"detail": "Item not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+
 
