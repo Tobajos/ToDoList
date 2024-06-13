@@ -31,7 +31,7 @@ This project is a web application built with Django and Angular. It integrates a
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/todolist.git
+    git clone https://github.com/Tobajos/ToDoList.git
     ```
 
 2. Create a virtual environment and activate it:
